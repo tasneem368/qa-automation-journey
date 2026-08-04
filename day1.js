@@ -5,7 +5,7 @@ const date = '30/7/2026';
 let progressDate;
  console.log(`my name is ${ownerName}  i was born in ${date}`);
 
- // - An array of 5 QA tools you want to learn
+// Array of 5 QA tools to learn
 
- let  neededSkils ='[automtionplaywright, cypress, appium, docker, agentic ]';
- console.log( `the skills that i should learn is ${neededSkils}`);  
+let neededSkills = ['automationPlaywright', 'cypress', 'appium', 'docker', 'agentic'];
+ console.log( `the skills that i should learn is ${neededSkills}`);  
