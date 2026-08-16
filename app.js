@@ -10,15 +10,29 @@
 // console.log(`Comparison 1: ${comparison1}, Comparison 2: ${comparison2}, Comparison 3: ${comparison3}, Comparison 4: ${comparison4}`);
 
 // recap of loops data types and operators
-for (let i = 1; i <= 15; i++) {
+// for (let i = 1; i <= 15; i++) {
     
-    if ( i % 5 === 0) {
-        console.log(`Asap frontend: ${i}`);
-    } 
-    else if ( i % 2 === 0) {
-        console.log(` frontend: ${i}`);
-    }
-    else {
-        console.log(`asap: ${i}`);
-    }
-}
+//     if ( i % 5 === 0) {
+//         console.log(`Asap frontend: ${i}`);
+//     } 
+//     else if ( i % 2 === 0) {
+//         console.log(` frontend: ${i}`);
+//     }
+//     else {
+//         console.log(`asap: ${i}`);
+//     }
+// }
+// // second task
+// let string = "Asap frontend";
+// for (let i = 0; i < string.length; i++) {
+//     console.log(`char is "${string[i]}" and the index is ${i}`);
+// }
+
+// function task 
+
+function convertCurrency(amount) {
+    return amount * 1.5;
+}       
+console.log(convertCurrency(1000)); // Output: 1500
+console.log(convertCurrency(500));// Output: 750
+console.log(convertCurrency(200));// Output: 300
