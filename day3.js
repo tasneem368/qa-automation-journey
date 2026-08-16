@@ -53,3 +53,7 @@ console.log("\n=== High Priority Failures ===");
 getHighPriorityFails(testResults).forEach((result) => {
   console.log(`High Priority Fail: ${result.name}, Duration: ${result.duration}ms`);
 });
+// ternary operator
+let score = 85;
+let grade = score >= 90 ? "A" : score >= 80 ? "B" : score >= 70 ? "C" : score >= 60 ? "D" : "F";
+console.log(`Score: ${score}, Grade: ${grade}`); 
