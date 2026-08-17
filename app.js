@@ -30,24 +30,24 @@
 
 // function task 
 
-function convertCurrency(amount) {
-    return amount * 1.5;
-}       
-console.log(convertCurrency(1000)); // Output: 1500
-console.log(convertCurrency(500));// Output: 750
-console.log(convertCurrency(200));// Output: 300
+// function convertCurrency(amount) {
+//     return amount * 1.5;
+// }       
+// console.log(convertCurrency(1000)); // Output: 1500
+// console.log(convertCurrency(500));// Output: 750
+// console.log(convertCurrency(200));// Output: 300
 
-// filyer method
+// // filyer method
 
-let clubPeopleAge = [
-    15,
-    16,
-    35,
-    40,
-    45
-];
-// clubPeopleAge = clubPeopleAge.filter((age) => age >= 18);
-// console.log(clubPeopleAge)
+// let clubPeopleAge = [
+//     15,
+//     16,
+//     35,
+//     40,
+//     45
+// ];
+// // clubPeopleAge = clubPeopleAge.filter((age) => age >= 18);
+// // console.log(clubPeopleAge)
 
 // for (let i = 0; i < clubPeopleAge.length; i++) {
 //     console.log(`The age of the club people is ${clubPeopleAge[i]}`);
@@ -60,3 +60,11 @@ let clubPeopleAge = [
 // }   
 // console.log(adults);
 
+let USD = [10, 20, 30, 40];
+//  let AUD = USD.map((amount) => amount * 1.5);
+// console.log(AUD);
+let AUD = [];
+for (let i = 0; i < USD.length; i++) {
+    AUD.push(USD[i]* 1.5);
+}
+console.log(AUD);
