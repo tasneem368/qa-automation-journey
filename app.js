@@ -60,11 +60,47 @@
 // }   
 // console.log(adults);
 
-let USD = [10, 20, 30, 40];
-//  let AUD = USD.map((amount) => amount * 1.5);
+// let USD = [10, 20, 30, 40];
+// //  let AUD = USD.map((amount) => amount * 1.5);
+// // console.log(AUD);
+// let AUD = [];
+// for (let i = 0; i < USD.length; i++) {
+//     AUD.push(USD[i]* 1.5);
+// }
 // console.log(AUD);
-let AUD = [];
-for (let i = 0; i < USD.length; i++) {
-    AUD.push(USD[i]* 1.5);
+
+
+const users = [
+    {
+    email : "tasneem@gmail.com", 
+    password :"test123", 
+    name : "tasneem",
+    discord : "test",
+    supscription : "vip", 
+    lessonscompleted : "1, 2,3"
+
+},
+{
+     email : "nasneem@gmail.com", 
+    password : "nest123", 
+    name : "tasneem",
+    discord : " test",
+    supscription : " vip", 
+    lessonscompleted : "1, 2,3"
 }
-console.log(AUD);
+];
+
+const  signUp = (email, password, name, discord, supscription, lessonscompleted ) => {
+    const newUser = {
+        email, 
+        password, 
+        name,
+         discord,
+          supscription,
+           lessonscompleted 
+    };
+    users.push(newUser)
+
+};
+console.log(users[0])
+ 
