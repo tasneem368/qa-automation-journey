@@ -1,7 +1,7 @@
 import {test, expect} from '@playwright/test';
 const username = 'standard_user';
 const password = 'secret_sauce';
-// open sau website and login
+// Test1: open sau website and login
 test('login to sau website', async ({page}) => {
     await page.goto('https://www.saucedemo.com/');
     await page.locator('#user-name').fill(username);
@@ -31,7 +31,12 @@ test('login to sau website with valid credentials', async ({page}) => {
     await page.locator('#user-name').fill(username);
     await page.locator('#password').fill(password);
     await page.locator('#login-button').click();
-    await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
-    console.log('Test passed - login to sau website with products page after login');
-   
+    // Verify Products heading is visible ← DIFFERENT from Test 1!
+    await expect(page.locator('.title')).toHaveText('Products');
+     
+    // Verify at least one product is visible
+    await expect(page.locator('.inventory_item').first()).toBeVisible();
+    
+    console.log('✅ Products page content verified');
 });
+    
