@@ -34,6 +34,9 @@ test('login to sau website with valid credentials', async ({page}) => {
     // Verify Products heading is visible ← DIFFERENT from Test 1!
     await expect(page.locator('.title')).toHaveText('Products');
      
+//     / Use XPath to find button by text
+//   const addToCart = page.locator('//button[text()="Add to cart"]').first();
+// //   await expect(addToCart).toBeVisible();
     // Verify at least one product is visible
     await expect(page.locator('.inventory_item').first()).toBeVisible();
     
